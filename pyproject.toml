@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "autonotes-ai"
+version = "0.1.0"
+description = "AI-powered notes generator from YouTube videos and PDFs"
+authors = ["Master Tej <marketejas4@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+
+fastapi = "^0.115.0"
+uvicorn = "^0.30.0"
+python-dotenv = "^1.0.1"
+
+langchain = "^0.3.0"
+langchain-community = "^0.3.0"
+openai = "^1.0.0"
+tiktoken = "^0.7.0"
+
+faiss-cpu = "^1.8.0"
+pytube = "^15.0.0"
+pypdf = "^4.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.0.0"
+isort = "^5.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
