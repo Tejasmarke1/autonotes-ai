@@ -9,3 +9,9 @@ def root():
 @app.get("/health")
 def health_check():
     return {"status": "healthy"}
+
+
+
+@app.get("/healthz")
+def healthz():
+    return {"status": "healthy"}
